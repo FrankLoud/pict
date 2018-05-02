@@ -1,5 +1,7 @@
 #include <fstream>
 #include <sstream>
+#include <locale>
+#include <codecvt>
 #include "model.h"
 using namespace std;
 
@@ -556,11 +558,22 @@ bool CModelData::ReadRowSeedFile( const wstring& filePath )
     }
 
     EncodingType encoding = getEncodingType( line );
-    if ( encoding != ANSI && encoding != UTF8 )
-    {
-        PrintMessage( RowSeedsError, L"Only ANSI and UTF-8 are supported" );
-        return( false );
-    }
+	locale loc( "" );
+	switch( m_encoding )
+	{
+	case ANSI:
+		break;
+	case UTF8:
+		file.imbue(std::locale(file.getloc(), new std::codecvt_utf8<wchar_t, 0x10ffff, codecvt_mode::consume_header>));
+		break;
+	case UTF16_BigEndian:
+	case UTF16_LittleEndian:
+	case UTF32_BigEndian:
+	case UTF32_LittleEndian:
+	default:
+		PrintMessage( RowSeedsError, L"Only ANSI and UTF-8 are supported" );
+		return( false );
+	}
 
     vector< vector<CModelParameter>::iterator > parameters;
 
