@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libpict.a CMakeFiles/pict_api.dir/combination.cpp.o CMakeFiles/pict_api.dir/deriver.cpp.o CMakeFiles/pict_api.dir/exclusion.cpp.o CMakeFiles/pict_api.dir/model.cpp.o CMakeFiles/pict_api.dir/parameter.cpp.o CMakeFiles/pict_api.dir/pictapi.cpp.o CMakeFiles/pict_api.dir/task.cpp.o CMakeFiles/pict_api.dir/worklist.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libpict.a

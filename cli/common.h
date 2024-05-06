@@ -14,7 +14,7 @@
 
 // TODO: move these two somewhere else
 #define TEXT_TokenConstraintEnd  L";"
-const wchar_t RESULT_DELIMITER = L'\t';
+const wchar_t RESULT_DELIMITER = L',';
 
 //
 // Types of messages

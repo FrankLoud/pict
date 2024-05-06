@@ -1,0 +1,3 @@
+currency: null,"","hkd","isk","twd","aed","eur","cop","dkk","usd","cad","bgn","nok","ron","uyu","lazio","ngn","azn","crc","czk","pen","kes","sek","nzd","brl","uah","hrk","chf","mxn","ars","kzt","sar","clp","ugx","zar","vnd","thb","aud","jpy","pln","ghs","gbp","idr","huf","php","try","rub"
+position: null,"","homepage","overview","search","coin_detail","popup_insufficient_balance","market"
+userId: null,"",1000008647588,1000008647600,1000008647601,1000008647602,1000008647603,1000008647604,1000008727785,1000008647614,1000008647612,1000008647610,1000008647608,1000008647607,1000008647606,1000008727784
