@@ -50,7 +50,11 @@ Assuming installation of CMake and C++ toolchain, following set of commands will
 > cmake --build build
 > pushd build && ctest -v && popd
 ```
+## Using on Linux
 
+```
+./build/cli/pict ./doc/sample-models/strncpy.txt > ./doc/testcases/strncpy.csv
+```
 ## Debugging
 
 Most commonly, you will want to debug the command-line tool. Start in the **pictcli** project, **cli/pict.cpp** file. You'll find **wmain** routine there which would be a convenient place to put the very first breakpoint.
